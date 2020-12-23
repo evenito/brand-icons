@@ -1,0 +1,72 @@
+@function load-icon($codepoint) {
+  @return unquote('"\\#{$codepoint}"');
+}
+@font-face {
+  font-family: 'brandicon';
+  src:  url('./brandicon.eot?g66jeb');
+  src:  url('./brandicon.eot?g66jeb#iefix') format('embedded-opentype'),
+    url('./brandicon.ttf?g66jeb') format('truetype'),
+    url('./brandicon.woff?g66jeb') format('woff'),
+    url('./brandicon.svg?g66jeb#brandicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="brandicon-"], [class*=" brandicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'brandicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.brandicon-email:before {
+  content: load-icon("e900");
+}
+.brandicon-facebook:before {
+  content: load-icon("e901");
+}
+.brandicon-instagram:before {
+  content: load-icon("e902");
+}
+.brandicon-kununu:before {
+  content: load-icon("e903");
+}
+.brandicon-linkedin:before {
+  content: load-icon("e904");
+}
+.brandicon-pinterest:before {
+  content: load-icon("e905");
+}
+.brandicon-snapchat:before {
+  content: load-icon("e906");
+}
+.brandicon-spotify:before {
+  content: load-icon("e907");
+}
+.brandicon-tiktok:before {
+  content: load-icon("e908");
+}
+.brandicon-twitter:before {
+  content: load-icon("e909");
+}
+.brandicon-vimeo:before {
+  content: load-icon("e90a");
+}
+.brandicon-xing:before {
+  content: load-icon("e90b");
+}
+.brandicon-yammer:before {
+  content: load-icon("e90c");
+}
+.brandicon-youtube:before {
+  content: load-icon("e90d");
+}
